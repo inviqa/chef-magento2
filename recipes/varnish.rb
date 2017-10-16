@@ -4,7 +4,7 @@ vcl = resources("template[#{node['varnish']['config_dir']}/default.vcl]")
 vcl.cookbook 'magento2'
 vcl.source 'varnish.vcl.erb'
 vcl.variables(
-  params: node['varnish'],
+  varnish: node['varnish'],
   magento: node['magento']
 )
 
