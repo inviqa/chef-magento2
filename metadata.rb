@@ -2,7 +2,7 @@ name        'magento2'
 maintainer  'Inviqa'
 license     'Apache 2.0'
 description 'Magento2 specific cookbook'
-version     '1.0.0'
+version     '1.0.1'
 
 depends 'chef-varnish'
 depends 'config-driven-helper'
