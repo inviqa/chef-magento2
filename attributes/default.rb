@@ -1,6 +1,7 @@
 default['nginx']['ssl_dir'] = "#{node['nginx']['dir']}/ssl"
 
 node.override['varnish']['version'] = '4.0'
+default['varnish']['use_varnishlog_service'] = false
 
 default['varnish']['VARNISH_BACKEND_BETWEEN_BYTES_TIMEOUT'] = '60s'
 default['varnish']['VARNISH_BACKEND_FIRST_BYTE_TIMEOUT'] = '60s'
