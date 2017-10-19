@@ -28,6 +28,8 @@ default['magento']['redis']['compress_data'] = '1'
 default['magento']['redis']['compress_tags'] = '1'
 default['magento']['redis']['compress_threshold'] = '2048'
 default['magento']['redis']['compression_lib'] = 'gzip'
-default['magento']['redis']['lifetime_limit'] = 57600;
+default['magento']['redis']['lifetime_limit'] = 57600
+
+default['magento']['memcached']['session_save_driver'] = 'memcache'
 
 default['chown_allowed'] = true

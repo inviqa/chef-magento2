@@ -47,7 +47,7 @@ $configuration['http_cache_hosts'] = [
 ];
 
 $configuration['session'] = [
-    'save' => "memcache",
+    'save' => "<%= @magento['memcached']['session_save_driver'] %>",
     'save_path' => "tcp://<%= @memcached_host %>:<%= @instance_details['memcached']['port'] %>?persistent=1&weight=1&timeout=10&retry_interval=10",  // e.g. for memcache session save handler tcp://10.0.0.1:11211?persistent=1&weight=2&timeout=10&retry_interval=10
     'session_cache_limiter' => 'nocache'                                                                                                             //see http://php.net/manual/en/function.session-cache-limiter.php#82174 for possible values -->
 ];
